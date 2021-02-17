@@ -8,16 +8,15 @@
 
 ### 环境
 - `maven` latest   
-- `jdk1.8`   
-- `spring boot 1.5.8 release`(目前最新版)
--  个人推荐`idea`来代替eclipse（希望不要被说成异教徒必须死）
-- mysql5.5+
+- `jdk11`   
+- `spring boot 2.x release`
+- 个人推荐`idea`来代替eclipse
 - git: 版本管理
 - nginx: 反向代理服务器
 
 
 ### 注意事项
-- 本项目代码托管在[github](https://github.com/houko/SpringBootUnity)和[码云](http://git.oschina.net/hupeng/SpringBootUnity)两个地方,最新代码会先推送在github上,码云上会在github上更新完之后进行同步。
+- 本项目代码托管在[github](https://github.com/houko/SpringBootUnity)和[码云](http://git.oschina.net/hupeng_admin/SpringBootUnity)两个地方,最新代码会先推送在github上,码云上会在github上更新完之后进行同步。
 - 本项目多数数据库都用到了`hibernate`，如果没有提供`sql`文件。则启动时会根据代码映射自动生成数据库表，请在启动前修改`application.properties`中的数据库连接信息
 
 
@@ -60,13 +59,19 @@ http://localhost:808/doc.html bootstrap-ui
 - 2017-09-08 crawler模块(网络爬虫):修复本地文件目录不存在会报错的bug。处理方式为：不存在则自动创建
 - 2017-11-02 开源协议从apache更换到MIT
 - 2017-11-02 添加本地运行方式的说明
-- 2017-11-02 版本更新到2017.2
+- 2017-11-02 版本更新到2020.1
 - 2017-11-02 spring boot版本更新到1.5.8
 - 2017-11-03 添加kotlin环境配置
 - 2017-11-03 按照阿里巴巴编程规范插件P3C优化代码
 - 2017-11-03 合并`api`和`website`模块,访问`localhost:8080`会显示网站主页,访问`localhost:8080/api`会显示api管理界面
 - 2018-04-09 将整个项目升级到spring boot2.0 release版本,api有较大变动
 - 2019-08-06 travis-ci指定jdk版本
+- 2020-10-09 升级版本到2020.2
+- 2020-10-09 升级jdk版本到11
+- 2020-10-09 升级mysql connector到8
+- 2020-10-09 升级spring boot到2.3.0
+- 2020-10-09 修复了升级后API的破坏性变动，修复了一些了编辑器警告
+
 
 
 
@@ -122,7 +127,7 @@ http://localhost:808/doc.html bootstrap-ui
 
     MIT License
     
-    Copyright (c) 2019 Peng Hu
+    Copyright (c) 2020 Peng Hu
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
